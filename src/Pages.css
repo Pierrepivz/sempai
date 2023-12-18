@@ -12,11 +12,17 @@ img{
   border-radius: 3px;
 
 }
+
+.transition{
+  opacity: 0;
+  transition-duration: 1s;
+}
 #manga_page{
-  margin-top: 70px;
+  margin-top: 40px;
+  
   
 }
-#page_select{
-
-  
+.appear{
+  opacity: 1;
+  transition-duration: 2s;
 }

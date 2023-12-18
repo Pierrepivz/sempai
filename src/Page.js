@@ -107,11 +107,12 @@ export default function Page(props){
   
    
   useEffect (() => {
-
+    
+  var upload = document.querySelector(".transition").classList;
   const queryParameters = new URLSearchParams(window.location.search);
   const id = queryParameters.get("id");
   setId(id);
-  setImage(page_list[id-1]);
+  
 
   if(id == 6  || id == 11){
     setupload("uploader_large");
@@ -119,7 +120,9 @@ export default function Page(props){
     setupload("uploader");
   }
 
-    
+    setImage(page_list[id-1]);
+    upload.add("appear");
+
     
     }, []); 
   
@@ -163,7 +166,7 @@ return(
 
 
     <div class="container background">
-      <h1title>Joyeux anniv Bro 🧡🧡</h1title><br/><br/><br/><br/>
+      <br/><br/><br/><br/>
         <div class="buton">
         
         
@@ -234,8 +237,8 @@ return(
 
         </div>
        
-        <div class={uploader} id="manga_page">
-            <img src={imagetest}/>      
+        <div class={uploader} id="manga_page" onClick={e => nextpage()}>
+            <img src={imagetest} class="transition" />      
         
         </div>
         
@@ -247,5 +250,5 @@ return(
 
 
 );
-    /*<buton class="buton">Postules mec</buton>*/
+  
 }

@@ -1,7 +1,6 @@
 
 body{
   background-color: #282c34;
-  background: url("./images/background.jpg");
   background-size: contain;
   display: flex;
   
@@ -35,7 +34,7 @@ h1title{
 }
 
 .container{
-  margin-top: 40px;
+  margin-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
