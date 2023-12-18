@@ -125,7 +125,7 @@ export default function Page(props){
   
   function pageselect(select){
 
-   window.location.href = `/page?id=${select}`;
+   window.location.href = `/?id=${select}`;
   
   }  
 
