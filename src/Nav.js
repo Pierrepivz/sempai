@@ -13,7 +13,7 @@ function Nav() {
       <div class='nav_elements'>
       
       
-      <h2>Contact</h2>
+      <h2 onClick={ e => window.scrollTo(0,600)}>Contact</h2>
       
 
       <div class="column">

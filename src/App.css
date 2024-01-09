@@ -1,14 +1,20 @@
 
 body{
-  background-color: #282c34;
-  background-size: contain;
+ 
+  background: url("./images/background3.jpg");
+  
+  background-size: cover;
   display: flex;
   
   
   
 }
+.nav{
+   background-color: #282c34c2;
+   
+}
 h1title{
-  font-family: 'Courier New' ;
+  font-family: 'Montserrat' ;
   font-size: 60px;
   font-weight: 900;
   color: white;
@@ -39,8 +45,7 @@ h1title{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
-  
+  margin-bottom: 3%;
   transition-duration: 1s;
   
 }
@@ -63,7 +68,7 @@ content{
   width: 50%;
   height: 700px;
   transition-duration: 1s;
-  margin-bottom: 100px;
+  
   background: contain;
   
 
@@ -100,7 +105,8 @@ buton:hover {
 }
 
 .nav{
-
+  
+  font-family: "montserrat";
   padding-top: 10px;
   height: 80px;
   width: 1450px;
