@@ -45,7 +45,7 @@ img{
   }
 .none{
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
     
 }
 
@@ -60,7 +60,7 @@ img{
 .page_appear{
 
     animation: fadeIn ease-in 1s 1 normal forwards;
-    transition-duration: 2s;
+    
     
 }
 

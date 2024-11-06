@@ -15,31 +15,32 @@ export default function Manga_test(){
         var page = document.querySelector(".manga_viewport");
         page.classList.add("none");
 
+        
 
         setTimeout(function() {
 
-                if(value > -1 && value < 58){
+            if(value > -1 && value < 58){
 
                 var new_page = Number(value);
                 setPage(new_page);
                 setSelector(new_page);
-
+    
             }else{
                 return false;
             }
-                
-                
-                
-              }, 1000);
+            
+            
+            
+            
+          }, 500);
 
-        
-
-        setTimeout(function() {
+          setTimeout(function() {
+            
             
             page.classList.remove("none");
             
             
-          }, 1300);
+          }, 1200);
    
     }
 
