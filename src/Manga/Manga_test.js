@@ -1,13 +1,25 @@
 import chapitre from "./Chapitre1.js";
-import { useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import "./Manga.css";
 
 
 export default function Manga_test(){
+    
+    const [page_list,Setchapitre] = useState([]) ;
 
-    const page_list = chapitre();
+    useEffect(() => {
+
+        Setchapitre(chapitre());
+
+    });
+
+
+    
+    
     const [actual_page,setPage] = useState(0);
     const [selector,setSelector] = useState(0);
+    
+
     
 
     const page_manager = async (value) => {
@@ -43,6 +55,12 @@ export default function Manga_test(){
           }, 1200);
    
     }
+
+    const pageValue = useMemo(() => {
+
+        return page_list[actual_page];
+        
+      },[page_list]);
 
    return(
        <div class="manga">
@@ -128,7 +146,8 @@ export default function Manga_test(){
        <div class="manga_viewport">
 
            <div class="manga_container" >
-                <img class="page_appear" src={page_list[actual_page]} />
+                
+                <img class="page_appear" src={pageValue} />
                    
                
            </div>
